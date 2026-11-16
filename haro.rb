@@ -5,21 +5,21 @@
 class Haro < Formula
   desc "Lee, explica, valida y edita configuraciones de HAProxy"
   homepage "https://github.com/pkarc/haro"
-  version "0.1.0-alpha"
+  version "0.1.1-alpha"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pkarc/haro/releases/download/v0.1.0-alpha/haro_0.1.0-alpha_darwin_amd64.tar.gz"
-      sha256 "f67685c69d735f603931a80b04290d5820d14055f1767e4842bbe38e901ec235"
+      url "https://github.com/pkarc/haro/releases/download/v0.1.1-alpha/haro_0.1.1-alpha_darwin_amd64.tar.gz"
+      sha256 "6f8a0d3cd7fc1bab186ab1e22a9d08b77327506b59d10761531d3d721c84848e"
 
       define_method(:install) do
         bin.install "haro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pkarc/haro/releases/download/v0.1.0-alpha/haro_0.1.0-alpha_darwin_arm64.tar.gz"
-      sha256 "a22af91071c54e73b36fa0db4136251d6ed02cd205fdf58c62157a0428ec1df2"
+      url "https://github.com/pkarc/haro/releases/download/v0.1.1-alpha/haro_0.1.1-alpha_darwin_arm64.tar.gz"
+      sha256 "2f7e06df0176cd2b1013d377e2990c9fa3ce3b95d953ea095b79572484b3b6bc"
 
       define_method(:install) do
         bin.install "haro"
@@ -29,15 +29,15 @@ class Haro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pkarc/haro/releases/download/v0.1.0-alpha/haro_0.1.0-alpha_linux_amd64.tar.gz"
-      sha256 "4404a39351938ef9f63cc4028500b92ebc6fb7ba3811e703f70cb073aeac91e7"
+      url "https://github.com/pkarc/haro/releases/download/v0.1.1-alpha/haro_0.1.1-alpha_linux_amd64.tar.gz"
+      sha256 "f6850e3ff592cc9562b4984bf4dcd91b32c9f395a127ce596f2ca4768190cfd1"
       define_method(:install) do
         bin.install "haro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pkarc/haro/releases/download/v0.1.0-alpha/haro_0.1.0-alpha_linux_arm64.tar.gz"
-      sha256 "e6a877904fe74226035b37068a02c75d34a6fa50bcd82aff9c1aff0c772e2d05"
+      url "https://github.com/pkarc/haro/releases/download/v0.1.1-alpha/haro_0.1.1-alpha_linux_arm64.tar.gz"
+      sha256 "b0a6fe437e8f68c461122f620a7924a8da9cfc5c9685285487cf868252322f88"
       define_method(:install) do
         bin.install "haro"
       end
